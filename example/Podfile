@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+pod 'CVNHighlightsAndItems', :path=>'../CVNHighlightsAndItems.podspec'
+pod 'Expecta', '~> 0.2'
+
