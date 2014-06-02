@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CVNPaperView/CVNPaperViewController.h>
 
-@interface CVNViewController : UIViewController
+@interface CVNViewController : CVNPaperViewController<CVNPaperViewDataSource>
 
 @end

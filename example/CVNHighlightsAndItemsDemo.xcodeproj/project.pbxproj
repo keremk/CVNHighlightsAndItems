@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BEA54E11AB741CF9AF92350 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9009D8529347D4935C17CD /* libPods.a */; };
+		BD5345A7193A87BE00664498 /* CVNSampleItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5345A6193A87BE00664498 /* CVNSampleItemViewCell.m */; };
+		BD5345AE193B974D00664498 /* CVNSampleItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5345AD193B974D00664498 /* CVNSampleItemViewCell.xib */; };
 		BD5CCDB51928300A00CD7D3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5CCDB41928300A00CD7D3E /* Foundation.framework */; };
 		BD5CCDB71928300A00CD7D3E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5CCDB61928300A00CD7D3E /* CoreGraphics.framework */; };
 		BD5CCDB91928300A00CD7D3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5CCDB81928300A00CD7D3E /* UIKit.framework */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B9009D8529347D4935C17CD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7321E429B4B4735ABAD1D83 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BD5345A5193A87BE00664498 /* CVNSampleItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVNSampleItemViewCell.h; sourceTree = "<group>"; };
+		BD5345A6193A87BE00664498 /* CVNSampleItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVNSampleItemViewCell.m; sourceTree = "<group>"; };
+		BD5345AD193B974D00664498 /* CVNSampleItemViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVNSampleItemViewCell.xib; sourceTree = "<group>"; };
 		BD5CCDB11928300A00CD7D3E /* CVNHighlightsAndItemsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVNHighlightsAndItemsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5CCDB41928300A00CD7D3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BD5CCDB61928300A00CD7D3E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +71,7 @@
 				BD5CCDB71928300A00CD7D3E /* CoreGraphics.framework in Frameworks */,
 				BD5CCDB91928300A00CD7D3E /* UIKit.framework in Frameworks */,
 				BD5CCDB51928300A00CD7D3E /* Foundation.framework in Frameworks */,
+				6BEA54E11AB741CF9AF92350 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +95,7 @@
 				BD5CCDD91928300B00CD7D3E /* CVNHighlightsAndItemsDemoTests */,
 				BD5CCDB31928300A00CD7D3E /* Frameworks */,
 				BD5CCDB21928300A00CD7D3E /* Products */,
+				B7321E429B4B4735ABAD1D83 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +115,7 @@
 				BD5CCDB61928300A00CD7D3E /* CoreGraphics.framework */,
 				BD5CCDB81928300A00CD7D3E /* UIKit.framework */,
 				BD5CCDD31928300B00CD7D3E /* XCTest.framework */,
+				8B9009D8529347D4935C17CD /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +130,9 @@
 				BD5CCDCA1928300B00CD7D3E /* CVNViewController.m */,
 				BD5CCDCC1928300B00CD7D3E /* Images.xcassets */,
 				BD5CCDBB1928300A00CD7D3E /* Supporting Files */,
+				BD5345A5193A87BE00664498 /* CVNSampleItemViewCell.h */,
+				BD5345A6193A87BE00664498 /* CVNSampleItemViewCell.m */,
+				BD5345AD193B974D00664498 /* CVNSampleItemViewCell.xib */,
 			);
 			path = CVNHighlightsAndItemsDemo;
 			sourceTree = "<group>";
@@ -159,9 +173,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD5CCDE31928300B00CD7D3E /* Build configuration list for PBXNativeTarget "CVNHighlightsAndItemsDemo" */;
 			buildPhases = (
+				876EA46F8E004F8997F04CDE /* Check Pods Manifest.lock */,
 				BD5CCDAD1928300A00CD7D3E /* Sources */,
 				BD5CCDAE1928300A00CD7D3E /* Frameworks */,
 				BD5CCDAF1928300A00CD7D3E /* Resources */,
+				549AE0BA50D14FD187A5EB18 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD5CCDCD1928300B00CD7D3E /* Images.xcassets in Resources */,
+				BD5345AE193B974D00664498 /* CVNSampleItemViewCell.xib in Resources */,
 				BD5CCDBF1928300A00CD7D3E /* InfoPlist.strings in Resources */,
 				BD5CCDC81928300A00CD7D3E /* Main.storyboard in Resources */,
 			);
@@ -245,12 +262,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		549AE0BA50D14FD187A5EB18 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		876EA46F8E004F8997F04CDE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD5CCDAD1928300A00CD7D3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BD5CCDC51928300A00CD7D3E /* CVNAppDelegate.m in Sources */,
+				BD5345A7193A87BE00664498 /* CVNSampleItemViewCell.m in Sources */,
 				BD5CCDC11928300A00CD7D3E /* main.m in Sources */,
 				BD5CCDCB1928300B00CD7D3E /* CVNViewController.m in Sources */,
 			);
@@ -374,6 +425,7 @@
 		};
 		BD5CCDE41928300B00CD7D3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7321E429B4B4735ABAD1D83 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -387,6 +439,7 @@
 		};
 		BD5CCDE51928300B00CD7D3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7321E429B4B4735ABAD1D83 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -457,6 +510,7 @@
 				BD5CCDE51928300B00CD7D3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BD5CCDE61928300B00CD7D3E /* Build configuration list for PBXNativeTarget "CVNHighlightsAndItemsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +519,7 @@
 				BD5CCDE81928300B00CD7D3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

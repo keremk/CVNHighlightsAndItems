@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
-  s.name         = "CVNHighlightsAndItems"
+  s.name         = "CVNPaperView"
   s.version      = "0.0.1"
-  s.summary      = "A short description of CVNHighlightsAndItems."
+  s.summary      = "A short description of CVNPaperView."
 
   s.description  = <<-DESC
-                   A longer description of CVNHighlightsAndItems in Markdown format.
+                   A longer description of CVNPaperView in Markdown format.
 
                    * Think: Why did you write this? What is the focus? What does it do?
                    * CocoaPods will be using this to generate tags, and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.author             = { "Kerem Karatal" => "kkaratal@yahoo.com" }
   s.social_media_url   = "http://twitter.com/keremk"
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/keremk/CVNHighlightsAndItems.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/keremk/CVNPaperView.git", :tag => "0.0.1" }
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
   # s.resource  = "icon.png"
@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "CVNHighlightsAndItems", "~> 0.1"
+  # s.dependency "CVNKenBurnsImageView", "~> 0.1"
 end
